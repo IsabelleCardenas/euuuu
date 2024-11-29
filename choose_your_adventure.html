@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Adventure Awaits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .choice {
+            margin: 20px 0;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Your Adventure</h1>
+    <h2>Choose Your Path</h2>
+    <div id="start">
+        <p>You find yourself at the entrance of a mysterious forest. What will you do?</p>
+        <div class="choice">
+            <a href="#explore">Enter the forest</a>
+            <a href="#return">Return to the village</a>
+        </div>
+    </div>
+
+    <div id="explore">
+        <h2>The Forest</h2>
+        <p>The trees are tall, and the air is filled with the sounds of chirping birds. You see a path splitting in two directions. Where will you go?</p>
+        <div class="choice">
+            <a href="#left">Take the left path</a>
+            <a href="#right">Take the right path</a>
+        </div>
+    </div>
+
+    <div id="return">
+        <h2>Back to the Village</h2>
+        <p>You decide it's best to stay safe and head back to the comfort of the village. The adventure ends here.</p>
+        <a href="#start">Start Over</a>
+    </div>
+
+    <div id="left">
+        <h2>The Hidden Lake</h2>
+        <p>You discover a beautiful hidden lake surrounded by glowing flowers. It feels magical.</p>
+        <a href="#start">Start Over</a>
+    </div>
+
+    <div id="right">
+        <h2>The Abandoned Cabin</h2>
+        <p>You find an abandoned cabin. Inside, there are strange markings on the walls.</p>
+        <a href="#start">Start Over</a>
+    </div>
+</body>
+</html>
